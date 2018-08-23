@@ -1,0 +1,25 @@
+ul{
+    width: 10%;
+}
+.hero{
+    display: inline-block;
+    margin-top:30px;
+    cursor: pointer;
+    span.age{
+        color: rgb(8, 72, 190);
+        font-size: 20px;
+        padding: 5px;
+        background-color: #fff;
+        font-weight: 500;
+        border: 1px solid black
+    }
+    span.name{
+        color: #fff;
+        font-size: 20px;
+        background-color: aqua;
+        padding: 5px;
+        border: 1px solid blue;
+        border-left: none;
+        font-weight: 500;
+    }
+}

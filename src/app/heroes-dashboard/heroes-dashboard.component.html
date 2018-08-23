@@ -1,0 +1,17 @@
+<div class="dashboard">
+    <nav>
+        <span routerLink="/dashboard" routerLinkActive="active">DashBoard</span>  <span routerLinkActive="active" routerLink="/list">List Of Heroes</span>
+    </nav>
+    <h1>Heroes DashBoard</h1>
+    <div>
+      <ul>
+        <li *ngFor="let hero of topHeroes" (click)="viewHero(hero)">
+          <h6>Name : {{hero.name}}</h6>
+          <span>Age : {{hero.age}}</span>
+        </li>
+      </ul>
+    </div>
+
+  
+
+</div>

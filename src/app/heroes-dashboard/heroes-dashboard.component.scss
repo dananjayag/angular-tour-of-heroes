@@ -1,0 +1,24 @@
+.dashboard{
+    
+    ul{
+        margin:30px 0 0 0;
+        padding: 0;
+        li{
+            width:20%;
+            display: inline-block;
+            list-style: none;
+            background-color: black;
+            color:#fff;
+            margin:10px;
+            padding: 10px;
+            cursor: pointer;
+           h6{
+               font-size: 20px;
+           }
+           span{
+               font-size: 15px
+           }
+        }
+    }
+
+}

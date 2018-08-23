@@ -1,0 +1,15 @@
+<div>
+    <nav>
+        <span routerLink="/dashboard" routerLinkActive="active">DashBoard</span>  <span routerLinkActive="active" routerLink="/list">List Of Heroes</span>
+    </nav>
+  <h4>List Of Heroes</h4>
+  <ul>
+    <li *ngFor="let hero of heroesList" (click)="selectHero(hero)" class="hero">
+      <span class="age">{{hero.id}}</span><span class="name">{{hero.name}}</span>
+    </li>
+  </ul>
+  <div *ngIf="selectedHero">
+      <p>Selected Hero : {{selectedHero.name}}</p>
+       <button class="btn btn-success" (click)="viewDetails(selectedHero.id)"> View Details</button>
+  </div>
+</div>
